@@ -7,6 +7,14 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import StructuredData from "@/components/structured-data";
 import { ErrorBoundary } from "@/components/error-boundary";
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000");
+const profileDescription =
+  "AI Engineer from India building systems that scale ops, connect scattered workflows, reduce manual effort, and help teams move faster.";
+
 const geistSans = Geist({
   subsets: ["latin"],
   display: "swap",
@@ -20,30 +28,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bhanu Pratap Singh - Full Stack Developer | Portfolio",
-  description:
-    "A 20 year-old Full Stack Developer from India who loves building efficient, scalable, and intuitive applications. Currently working as Founding Engineer at a stealth startup. Available for opportunities.",
+  title: "Karan Paliwal",
+  description: profileDescription,
   keywords: [
-    "Full Stack Developer",
-    "React Developer",
-    "Node.js Developer",
+    "AI Engineer",
+    "AI Automation",
+    "AI Agents",
+    "Agentic Engineering",
+    "n8n Automation",
+    "Context Engineering",
+    "Operations Automation",
+    "Lead Generation",
+    "Outbound Automation",
     "TypeScript Developer",
     "JavaScript Developer",
-    "Frontend Developer",
-    "Backend Developer",
-    "Web Developer",
     "Software Engineer",
     "Portfolio",
     "India",
-    "Bhanu Pratap Singh",
-    "Stealth Startup",
-    "Founding Engineer",
+    "Karan Paliwal",
     "Call2Code Hackathon",
     "BitBash",
     "MUJ",
     "NIT Kurukshetra",
-    "Maharaja Agrasen Institute of Technology",
-    "MAIT",
+    "IILM University",
+    "Lal Bahadur Shastri Smarak Jaym Sr School",
     "Best Portfolio",
     "Minimalist Portfolio",
     "69ftw",
@@ -57,11 +65,11 @@ export const metadata: Metadata = {
     "Personal Website",
     "Developer Website",
   ],
-  authors: [{ name: "Bhanu Pratap Singh" }],
-  creator: "Bhanu Pratap Singh",
-  publisher: "Bhanu Pratap Singh",
+  authors: [{ name: "Karan Paliwal" }],
+  creator: "Karan Paliwal",
+  publisher: "Karan Paliwal",
   generator: "Next.js",
-  applicationName: "Bhanu Pratap Singh Portfolio",
+  applicationName: "Karan Paliwal Portfolio",
   referrer: "origin-when-cross-origin",
   robots: {
     index: true,
@@ -79,27 +87,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://bhanupratap.dev",
-    siteName: "Bhanu Pratap Singh Portfolio",
-    title: "Bhanu Pratap Singh - Full Stack Developer",
-    description:
-      "A 20 year-old Full Stack Developer from India who loves building efficient, scalable, and intuitive applications. Currently working as Founding Engineer at a stealth startup.",
+    url: siteUrl,
+    siteName: "Karan Paliwal Portfolio",
+    title: "Karan Paliwal",
+    description: profileDescription,
     images: [
       {
         url: "https://iili.io/KB9qfG1.png",
         width: 1200,
         height: 630,
-        alt: "Bhanu Pratap Singh - Full Stack Developer Portfolio",
+        alt: "Karan Paliwal Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@iBhanuDahiya",
-    creator: "@iBhanuDahiya",
-    title: "Bhanu Pratap Singh - Full Stack Developer",
-    description:
-      "A 20 year-old Full Stack Developer from India who loves building efficient, scalable, and intuitive applications. Available for opportunities.",
+    site: "@karanpaliwalll",
+    creator: "@karanpaliwalll",
+    title: "Karan Paliwal",
+    description: profileDescription,
     images: ["https://iili.io/KB9qfG1.png"],
   },
   icons: {
@@ -109,15 +115,10 @@ export const metadata: Metadata = {
     apple:
       "https://media.licdn.com/dms/image/v2/D4E03AQFoa40cJ2WOMA/profile-displayphoto-scale_400_400/B4EZgKXbIXGoAo-/0/1752520570498?e=1759968000&v=beta&t=cckryikVjD2X7Nvhcmw5I8B1w6sQofIPdTWlpbmkDSU",
   },
-  verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
-    yahoo: "your-yahoo-verification-code",
-  },
   category: "technology",
   classification: "Portfolio Website",
   other: {
-    "contact:email": "bhanudahiya8@gmail.com",
+    "contact:email": "karanpaliwal.work@gmail.com",
     "contact:phone_number": "+91-9416293757",
     "contact:country_name": "India",
     "contact:region": "Delhi",
@@ -125,22 +126,19 @@ export const metadata: Metadata = {
     "og:image:width": "1200",
     "og:image:height": "630",
     "og:image:type": "image/png",
-    "og:image:alt": "Bhanu Pratap Singh - Full Stack Developer Portfolio",
-    "og:site_name": "Bhanu Pratap Singh Portfolio",
+    "og:image:alt": "Karan Paliwal Portfolio",
+    "og:site_name": "Karan Paliwal Portfolio",
     "og:locale": "en_US",
     "og:type": "website",
-    "og:url": "https://bhanupratap.dev",
-    "og:title": "Bhanu Pratap Singh - Full Stack Developer",
-    "og:description":
-      "A 20 year-old Full Stack Developer from India who loves building efficient, scalable, and intuitive applications. Currently working as Founding Engineer at a stealth startup.",
+    "og:url": siteUrl,
+    "og:title": "Karan Paliwal",
+    "og:description": profileDescription,
     "og:image": "https://iili.io/KB9qfG1.png",
-    "twitter:image:alt": "Bhanu Pratap Singh - Full Stack Developer Portfolio",
-    "twitter:domain": "bhanupratap.dev",
-    "twitter:url": "https://bhanupratap.dev",
+    "twitter:image:alt": "Karan Paliwal Portfolio",
+    "twitter:url": siteUrl,
     "whatsapp:image": "https://iili.io/KB9qfG1.png",
-    "whatsapp:title": "Bhanu Pratap Singh - Full Stack Developer",
-    "whatsapp:description":
-      "A 20 year-old Full Stack Developer from India who loves building efficient, scalable, and intuitive applications.",
+    "whatsapp:title": "Karan Paliwal",
+    "whatsapp:description": profileDescription,
   },
 };
 

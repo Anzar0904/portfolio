@@ -30,7 +30,7 @@ export default function Page() {
             href="#"
             className="font-semibold text-neutral-900 dark:text-neutral-50"
           >
-            bhanu.
+            karan.
           </Link>
           <div className="flex items-center gap-2 sm:gap-4">
             <a
@@ -44,12 +44,6 @@ export default function Page() {
               className="hover:text-neutral-900 dark:hover:text-neutral-50 text-xs sm:text-xs"
             >
               projects
-            </a>
-            <a
-              href="#achievements"
-              className="hover:text-neutral-900 dark:hover:text-neutral-50 text-xs sm:text-xs"
-            >
-              achievements
             </a>
             <ThemeToggle />
           </div>
@@ -84,12 +78,12 @@ export default function Page() {
                     <div className="h-16 w-16 ring-2 ring-neutral-200 dark:ring-neutral-900 rounded-full overflow-hidden">
                       <img
                         src="/facedemo.jpeg"
-                        alt="Bhanu Pratap Singh"
+                        alt="Karan Paliwal"
                         className="h-full w-full object-cover scale-115 -translate-x-0.5"
                       />
                     </div>
                     <h1 className="text-2xl md:text-3xl font-medium tracking-tight text-neutral-900 dark:text-neutral-50">
-                      Bhanu Pratap Singh
+                      Karan Paliwal
                     </h1>
                   </div>
                 </SlideInLeft>
@@ -100,10 +94,10 @@ export default function Page() {
                     <span className="max-w-[38ch]">
                       <Typewriter
                         text={[
-                          "Full Stack Developer",
-                          "Product Engineer",
-                          "Freelancer",
+                          "AI Engineer",
                           "Shitposter",
+                          "Explorer",
+                          "Freelancer",
                         ]}
                         speed={90}
                         waitTime={2000}
@@ -124,7 +118,7 @@ export default function Page() {
                       className="h-6 w-20 rounded-sm bg-neutral-900 px-4 text-white shadow-sm hover:bg-neutral-900/90 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200"
                     >
                       <a
-                        href="https://drive.google.com/file/d/1m-0VhgvIMA1F-nX1upAT-HbgcDE52LQw/view"
+                        href="/resume/karan-paliwal-resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="View Resume"
@@ -139,7 +133,9 @@ export default function Page() {
                       className="h-6 w-6 rounded-sm border border-neutral-200 p-0 text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900"
                     >
                       <a
-                        href="mailto:bhanudahiya8@gmail.com"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=karanpaliwal.work@gmail.com"
+                        target="_blank"
+                        rel="noreferrer"
                         aria-label="Send email"
                       >
                         <Mail className="h-4 w-4" />
@@ -152,7 +148,7 @@ export default function Page() {
                       className="h-6 w-6 rounded-sm border border-neutral-200 p-0 text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900"
                     >
                       <a
-                        href="https://twitter.com/iBhanuDahiya"
+                        href="https://x.com/karanpaliwalll"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="Open Twitter"
@@ -167,7 +163,7 @@ export default function Page() {
                       className="h-6 w-6 rounded-sm border border-neutral-200 p-0 text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900"
                     >
                       <a
-                        href="https://github.com/bhanudahiyaa"
+                        href="https://github.com/karanpaliwallll"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="Open GitHub"
@@ -182,7 +178,7 @@ export default function Page() {
                       className="h-6 w-6 rounded-sm border border-neutral-200 p-0 text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900"
                     >
                       <a
-                        href="https://www.linkedin.com/in/bhanupratap1/"
+                        href="https://www.linkedin.com/in/karanpaliwalll/"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="Open LinkedIn"
@@ -199,13 +195,13 @@ export default function Page() {
             <FadeInText delay={0.5}>
               <section className="mt-4 m-2 justify-center items-center text-[13px] leading-6 text-neutral-600 dark:text-neutral-300">
                 <p>
-                  A 20 year-old developer from India who loves building{" "}
+                  Most teams are not short on tools. They are short on systems
+                  that actually work together.{" "}
                   <span className="rounded bg-yellow-200 px-1.5 py-0.5 text-[12px] font-medium text-neutral-900">
-                    efficient, scalable, and intuitive applications.
+                    I build systems that scale ops,
                   </span>{" "}
-                  With over a year of hands-on experience, I previously worked
-                  at a US-based startup and am now building a stealth startup as
-                  a Founding engineer.
+                  connect scattered workflows, reduce manual effort, and help
+                  teams move faster without adding more chaos.
                 </p>
               </section>
             </FadeInText>
@@ -222,21 +218,81 @@ export default function Page() {
                   <SlideInLeft delay={0.1}>
                     <WorkItem
                       icon="shield"
-                      company="Stealth"
-                      role="Founding Engineer"
-                      period="August 2025 – Present"
-                      summary="Built the backend from scratch and architected a scalable, production ready platform, implementing robust development workflows and optimized system architecture."
-                      logoUrl="/stealth.jpeg"
+                      company="Growleads"
+                      role="AI Engineering Intern"
+                      period="Feb 2026 - May 2026"
+                      summary="Built and optimized outbound automation systems, researched emerging AI tools, supported internal product development, and developed AI agents to improve operational efficiency for a B2B demand intelligence team."
+                      logoUrl="/growleads-logo.png"
+                      links={[
+                        {
+                          label: "Offer Letter ↗",
+                          href: "https://drive.google.com/file/d/1mt0sitpidx792teX9CWrldxYe_huaTO0/view",
+                        },
+                        {
+                          label: "Certificate ↗",
+                          href: "https://drive.google.com/file/d/1L0ssaThvUJQmz-9lf6dLICKBLHNwJHsO/view",
+                        },
+                      ]}
                     />
                   </SlideInLeft>
                   <SlideInLeft delay={0.1}>
                     <WorkItem
                       icon="building"
-                      company="FirstContact"
-                      role="Backend Intern"
-                      period="April 2025 – June 2025"
-                      summary="Maintained backend for dynamic CMS content and workflows, fixed server side bugs, and optimized data handling to reduce downtime."
-                      logoUrl="/firstcontact.jpeg"
+                      company="BrightCanvas"
+                      role="n8n Lead Generation Specialist Intern"
+                      period="Sep 2025 - Mar 2026"
+                      summary="Designed n8n lead generation workflows, automated data collection, enrichment, and outreach processes, researched qualified prospects, and prepared performance reports to improve automation workflows."
+                      logoUrl="/brightcanvas-logo.webp"
+                      links={[
+                        {
+                          label: "Offer Letter ↗",
+                          href: "https://drive.google.com/file/d/10J9hSKiC2G34cKN-JGTHVnycLfsyObKR/view",
+                        },
+                        {
+                          label: "Certificate ↗",
+                          href: "https://drive.google.com/file/d/1rzWC3nEKUwDzoL1Tbe-X60QDlt6yA3hM/view",
+                        },
+                      ]}
+                    />
+                  </SlideInLeft>
+                  <SlideInLeft delay={0.1}>
+                    <WorkItem
+                      icon="building"
+                      company="Oqulix"
+                      role="AI Automation Engineer Intern"
+                      period="Dec 2025 - Feb 2026"
+                      summary="Developed an AI-powered automated content generator and implemented AI-driven workflow improvements for a VR product team focused on healthcare, education, and immersive experiences."
+                      logoUrl="/oqulix-logo-card.png"
+                      links={[
+                        {
+                          label: "Offer Letter ↗",
+                          href: "https://drive.google.com/file/d/1daIueW0j2Af9lKTxHZxfyv1KoPkPjot5/view",
+                        },
+                        {
+                          label: "Certificate ↗",
+                          href: "https://drive.google.com/file/d/18ONHZuMCAXlCDxuvDjrdbQ4SLsKIcCqf/view",
+                        },
+                      ]}
+                    />
+                  </SlideInLeft>
+                  <SlideInLeft delay={0.1}>
+                    <WorkItem
+                      icon="building"
+                      company="SGCA Technologies"
+                      role="UI/UX Designer Intern"
+                      period="Jun 2025 - Aug 2025"
+                      summary="Contributed to the design department through UI/UX design work, interface planning, and visual design support during a remote internship with SGCA Technologies."
+                      logoUrl="/sgca-logo.png"
+                      links={[
+                        {
+                          label: "Offer Letter ↗",
+                          href: "https://drive.google.com/file/d/1KfbghjPATGqnrVgP5NU42dbB0jJQTpYc/view",
+                        },
+                        {
+                          label: "Certificate ↗",
+                          href: "https://drive.google.com/file/d/13omMXeX4gYeob43MLR67OPE5lAVvehKv/view",
+                        },
+                      ]}
                     />
                   </SlideInLeft>
                 </div>
@@ -254,83 +310,77 @@ export default function Page() {
                 <div className="space-y-2">
                   <SlideInLeft delay={0.1}>
                     <ProjectListItem
-                      title="Market Pulse"
+                      title="The Art Of Building Skills"
                       links={[
                         {
-                          label: "live preview ↗",
-                          href: "https://call2-codecore4.vercel.app/",
-                        },
-                        {
-                          label: "github ↗",
-                          href: "https://github.com/Bhanudahiyaa/Call2Code",
+                          label: "Case Study ↗",
+                          href: "/project-pdfs/the-art-of-building-skills.pdf",
                         },
                       ]}
                       bullets={[
-                        "Built in 24 hours at Call2Code Hackathon (MUJ) and selected as a finalist among 100+ teams.",
-                        "Developed 12+ features: real-time charts, multilingual support (English, Hindi, Spanish),voice navigation using Web Speech API.",
-                        "Integrated APIs for real-time financial analytics and sentiment analysis across 50+ tickers.",
+                        "Designed a model-agnostic framework for turning repeated AI workflows into reusable agent skills instead of disposable prompts.",
+                        "Defined the skill package structure around SKILL.md, scripts, references, and assets so agents load only the context they need.",
+                        "Documented a build process for capturing repeatable workflows, adding constraints and examples, then testing them on real tasks.",
                       ]}
-                      tags={["React", "TypeScript", "TailwindCSS", "Supabase"]}
+                      tags={["Agent Workflows", "Skills", "Plugins", "Automation"]}
                     />
                   </SlideInLeft>
                   <SlideInRight delay={0.1}>
                     <ProjectListItem
-                      title="SQL QueryPilot"
+                      title="Model Agnostic AI-OS v1"
                       links={[
                         {
-                          label: "live preview ↗",
-                          href: "https://sql-querypilot.streamlit.app/",
-                        },
-                        {
-                          label: "github ↗",
-                          href: "https://github.com/Bhanudahiyaa/SQL-QueryPilot",
+                          label: "Case Study ↗",
+                          href: "/project-pdfs/model-agnostic-ai-os-v1.pdf",
                         },
                       ]}
                       bullets={[
-                        "Converts natural language into SQL, reducing query time by 90% and improving accessibility non-tech users.",
-                        "Editable SQL previews with live execution on 20+ databases.",
-                        "Deployed on Streamlit Cloud with zero‑downtime CI/CD.",
+                        "Architected an Obsidian-based operating system that gives AI agents project truth, session history, corrections, and durable memory.",
+                        "Separated current status, reusable memory, corrections, and session archive so future agents know what to trust.",
+                        "Shipped a local-first v1 with vault structure, retrieval map, active handoff, closeout flow, backups, and setup scripts.",
                       ]}
-                      tags={[
-                        "Python",
-                        "Streamlit",
-                        "SQLite",
-                        "Google Gemini Pro",
-                      ]}
+                      tags={["Obsidian", "Agent Memory", "Markdown", "Automation"]}
                     />
                   </SlideInRight>
                   <SlideInLeft delay={0.2}>
                     <ProjectListItem
-                      title="Personal Finance Tracker"
+                      title="Lead Generation In A Box"
                       links={[
                         {
-                          label: "live preview ↗",
-                          href: "https://ledger-uwu-znsd.vercel.app/",
-                        },
-                        {
-                          label: "github ↗",
-                          href: "https://github.com/Bhanudahiyaa/Ledger-uwu",
+                          label: "Case Study ↗",
+                          href: "/project-pdfs/lead-generation-in-a-box.pdf",
                         },
                       ]}
                       bullets={[
-                        "Real‑time income/expense tracking used by 30+ users.",
-                        "CSV import/export for 1000+ records using custom parsing.",
-                        "Responsive Recharts for visualizations.",
+                        "Built an autonomous lead pipeline that turns a keyword into researched, enriched, and outreach-ready prospects.",
+                        "Scrapes relevant LinkedIn posts, profiles, and company context before drafting personalized outreach.",
+                        "Stores prospect history, pain points, enrichment data, and LinkedIn or WhatsApp drafts to avoid duplicated manual work.",
                       ]}
-                      tags={[
-                        "ReactJS",
-                        "Firebase",
-                        "Firestore",
-                        "Recharts",
-                        "PapaParse",
-                      ]}
+                      tags={["LinkedIn Scraping", "AI Agents", "Enrichment", "Outreach"]}
                     />
                   </SlideInLeft>
+                  <SlideInRight delay={0.2}>
+                    <ProjectListItem
+                      title="Content Engine v1"
+                      links={[
+                        {
+                          label: "Case Study ↗",
+                          href: "/project-pdfs/content-engine-v1.pdf",
+                        },
+                      ]}
+                      bullets={[
+                        "Designed an autonomous content pipeline that converts raw context into strategy, platform-specific copy, and visual assets.",
+                        "Built the workflow around strategy-first generation so the engine plans message angle, audience, and platform tone before writing.",
+                        "Maintains persistent context, generated strategy, platform selection, and final outputs for consistent multi-platform content.",
+                      ]}
+                      tags={["LLM Orchestration", "Content Strategy", "AI Assets", "Automation"]}
+                    />
+                  </SlideInRight>
                 </div>
                 <FadeInText delay={0.2}>
                   <div className="mt-3 flex justify-center">
                     <a
-                      href="https://github.com/Bhanudahiyaa"
+                      href="https://github.com/karanpaliwallll"
                       className="inline-flex items-center gap-1 rounded-sm border border-neutral-200 px-3 py-1.5 text-sm text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900"
                     >
                       View all projects →
@@ -340,35 +390,6 @@ export default function Page() {
               </section>
             </SlideUp>
 
-            <SlideUp delay={0.3}>
-              <section id="achievements" className="mt-8 section-lines p-4">
-                <FadeInText delay={0.1}>
-                  <h3 className="text-sm font-semibold text-neutral-900 dark:text-neutral-50 mb-4">
-                    Achievements.
-                  </h3>
-                </FadeInText>
-                <ul className="space-y-2">
-                  <SlideInLeft delay={0.1}>
-                    <li>
-                      <AchievementItem
-                        title="Finalist – Call2Code Hackathon, MUJ"
-                        date="April 2025"
-                        description="AI‑powered stock market dashboard with multilingual voice commands, real‑time analytics, and sentiment analysis. Selected as a finalist among 100+ teams."
-                      />
-                    </li>
-                  </SlideInLeft>
-                  <SlideInRight delay={0.1}>
-                    <li>
-                      <AchievementItem
-                        title="Semi‑Finalist – BitBash, NIT Kurukshetra"
-                        date="March 2025"
-                        description="Developed a real‑world solution under 24‑hour constraints; recognized among the top‑performing teams."
-                      />
-                    </li>
-                  </SlideInRight>
-                </ul>
-              </section>
-            </SlideUp>
             {/* Skills */}
             <SlideUp delay={0.3}>
               <section className="mt-5 section-lines p-4">
@@ -388,18 +409,20 @@ export default function Page() {
                   <SlideInLeft delay={0.1}>
                     <li>
                       <AchievementItem
-                        title="Maharaja Agrasen Institute of Technology"
-                        date="2023 – 2027"
-                        description="B.Tech in ECE"
+                        title="IILM University, Greater Noida"
+                        date="2024 - 2028"
+                        description="Bachelor of Technology - BTech, Computer Science"
+                        logoUrl="/iilm-logo-card.png"
                       />
                     </li>
                   </SlideInLeft>
                   <SlideInRight delay={0.1}>
                     <li>
                       <AchievementItem
-                        title="Jankidas Kapur Public School"
-                        date="2021 – 2023"
-                        description="Class XII (CBSE)"
+                        title="Lal Bahadur Shastri Smarak Jaym Sr School"
+                        date="2011 - 2023"
+                        description="Senior Secondary Certificate, Computer Science"
+                        logoUrl="/lbs-school-logo.png"
                       />
                     </li>
                   </SlideInRight>
@@ -432,7 +455,9 @@ export default function Page() {
                       className="h-9 rounded-md bg-neutral-900 px-4 text-white shadow-sm hover:bg-neutral-900/90 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200"
                     >
                       <a
-                        href="mailto:bhanudahiya8@gmail.com"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=karanpaliwal.work@gmail.com"
+                        target="_blank"
+                        rel="noreferrer"
                         aria-label="Get in touch via email"
                       >
                         <span className="inline-flex items-center gap-2">
@@ -448,7 +473,7 @@ export default function Page() {
                 <SlideInRight delay={0.1}>
                   <div className="mt-4 flex items-center justify-center gap-2 sm:gap-4 text-neutral-600 dark:text-neutral-300">
                     <a
-                      href="https://twitter.com/iBhanuDahiya"
+                      href="https://x.com/karanpaliwalll"
                       target="_blank"
                       rel="noreferrer"
                       aria-label="Twitter"
@@ -457,7 +482,7 @@ export default function Page() {
                       <Twitter className="h-4 w-4" />
                     </a>
                     <a
-                      href="https://github.com/bhanudahiyaa"
+                      href="https://github.com/karanpaliwallll"
                       target="_blank"
                       rel="noreferrer"
                       aria-label="GitHub"
@@ -466,7 +491,7 @@ export default function Page() {
                       <Github className="h-4 w-4" />
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/bhanupratap1/"
+                      href="https://www.linkedin.com/in/karanpaliwalll/"
                       aria-label="Open LinkedIn"
                       className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-200 hover:bg-neutral-50 dark:border-neutral-800 dark:hover:bg-neutral-900"
                     >
@@ -493,7 +518,7 @@ export default function Page() {
         </article>
         <div className="mt-8 flex justify-center rounded-xl py-2  border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-950 ">
           <p className="text-xs text-neutral-500 dark:text-neutral-400 section-lines p-2">
-            <span className="italic">Never forget, why you started</span> <span aria-hidden> ❤️</span>
+            <span className="italic">Going with the flow</span> <span aria-hidden>🍀</span>
           </p>
         </div>{" "}
       </div>

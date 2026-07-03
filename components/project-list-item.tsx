@@ -32,6 +32,8 @@ export function ProjectListItem({
             <a
               key={l.label}
               href={l.href}
+              target="_blank"
+              rel="noreferrer"
               className="text-xs rounded-sm border border-neutral-200 px-2 py-0.5 text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900"
             >
               {l.label}

@@ -5,37 +5,18 @@ import type React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import {
-  SiPython,
-  SiJavascript,
-  SiTypescript,
-  SiReact,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiExpress,
-  SiTailwindcss,
-  SiFramer,
-  SiMongodb,
-  SiPostgresql,
-  SiFirebase,
-  SiSupabase,
-  SiVercel,
-  SiGit,
-  SiGithub,
-  SiDocker,
-  SiSocketdotio,
-  SiAmazonwebservices,
-  SiNeo4J,
-  SiStreamlit,
-  SiPostman,
-  SiClerk,
-  SiShadcnui,
-  SiRedis,
-  SiPrisma,
-  SiGraphql,
-  SiWebpack,
-  SiFigma,
+  Bot,
+  BrainCircuit,
+  ChartNoAxesCombined,
+  DraftingCompass,
+  Network,
+  Route,
+} from "lucide-react";
+import {
+  SiClaude,
+  SiN8N,
+  SiOpenai,
 } from "react-icons/si";
-import { FaTwitter } from "react-icons/fa";
 
 type Skill = {
   label: string;
@@ -68,36 +49,18 @@ function SkillPill({ label, icon }: Skill) {
 
 export function SkillsDraggable() {
   const skills: Skill[] = [
-    { label: "Python", icon: <SiPython className="h-3 w-3" /> },
-    { label: "JavaScript", icon: <SiJavascript className="h-3 w-3" /> },
-    { label: "TypeScript", icon: <SiTypescript className="h-3 w-3" /> },
-    { label: "React.js", icon: <SiReact className="h-3 w-3" /> },
-    { label: "PostgreSQL", icon: <SiPostgresql className="h-3 w-3" /> },
-    { label: "Firebase", icon: <SiFirebase className="h-3 w-3" /> },
-    { label: "Supabase", icon: <SiSupabase className="h-3 w-3" /> },
-    { label: "Next.js", icon: <SiNextdotjs className="h-3 w-3" /> },
-    { label: "Node.js", icon: <SiNodedotjs className="h-3 w-3" /> },
-    { label: "Express.js", icon: <SiExpress className="h-3 w-3" /> },
-    { label: "Tailwind CSS", icon: <SiTailwindcss className="h-3 w-3" /> },
-    { label: "Framer Motion", icon: <SiFramer className="h-3 w-3" /> },
-    { label: "MongoDB", icon: <SiMongodb className="h-3 w-3" /> },
-    { label: "Vercel", icon: <SiVercel className="h-3 w-3" /> },
-    { label: "Git", icon: <SiGit className="h-3 w-3" /> },
-    { label: "GitHub", icon: <SiGithub className="h-3 w-3" /> },
-    { label: "Docker", icon: <SiDocker className="h-3 w-3" /> },
-    { label: "Socket.io", icon: <SiSocketdotio className="h-3 w-3" /> },
-    { label: "AWS", icon: <SiAmazonwebservices className="h-3 w-3" /> },
-    { label: "Neo4j", icon: <SiNeo4J className="h-3 w-3" /> },
-    { label: "Streamlit", icon: <SiStreamlit className="h-3 w-3" /> },
-    { label: "Postman API", icon: <SiPostman className="h-3 w-3" /> },
-    { label: "Clerk", icon: <SiClerk className="h-3 w-3" /> },
-    { label: "Shadcn UI", icon: <SiShadcnui className="h-3 w-3" /> },
-    { label: "Redis", icon: <SiRedis className="h-3 w-3" /> },
-    { label: "Prisma", icon: <SiPrisma className="h-3 w-3" /> },
-    { label: "GraphQL", icon: <SiGraphql className="h-3 w-3" /> },
-    { label: "Webpack", icon: <SiWebpack className="h-3 w-3" /> },
-    { label: "Figma", icon: <SiFigma className="h-3 w-3" /> },
-    { label: "Shitposter", icon: <FaTwitter className="h-3 w-3" /> },
+    { label: "Claude Code", icon: <SiClaude className="h-3 w-3" /> },
+    { label: "OpenAI Codex", icon: <SiOpenai className="h-3 w-3" /> },
+    { label: "AI Automation n8n", icon: <SiN8N className="h-3 w-3" /> },
+    { label: "Context Engineering", icon: <BrainCircuit className="h-3 w-3" /> },
+    { label: "Strategy Building", icon: <Route className="h-3 w-3" /> },
+    {
+      label: "Operational Efficiency",
+      icon: <ChartNoAxesCombined className="h-3 w-3" />,
+    },
+    { label: "Agentic Engineering", icon: <Network className="h-3 w-3" /> },
+    { label: "AI Agents", icon: <Bot className="h-3 w-3" /> },
+    { label: "Wireframing", icon: <DraftingCompass className="h-3 w-3" /> },
   ];
 
   return (
@@ -106,9 +69,6 @@ export function SkillsDraggable() {
         <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">
           Skills
         </h3>
-        <div className="pointer-events-none hidden text-[10px] text-slate-500 dark:text-slate-400 sm:block">
-          hover on this 🤭
-        </div>
       </div>
       <div className={cn("relative flex flex-wrap gap-2")}>
         {skills.map(s => (

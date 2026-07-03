@@ -8,7 +8,7 @@ type HeroHeadingProps = {
 
 export function HeroHeading({
   name,
-  subtitle = "Full Stack Developer from India",
+  subtitle = "AI Engineer from India",
   avatarSrc = "/developer-avatar.png",
 }: HeroHeadingProps) {
   return (

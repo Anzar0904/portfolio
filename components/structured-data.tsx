@@ -4,17 +4,21 @@ import { useEffect } from "react";
 
 export default function StructuredData() {
   useEffect(() => {
+    const siteUrl =
+      process.env.NEXT_PUBLIC_SITE_URL ?? window.location.origin;
+    const profileDescription =
+      "AI Engineer from India building systems that scale ops, connect scattered workflows, reduce manual effort, and help teams move faster.";
+
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "Person",
-      name: "Bhanu Pratap Singh",
-      jobTitle: "Full Stack Developer",
-      description:
-        "A 20 year-old Full Stack Developer from India who loves building efficient, scalable, and intuitive applications.",
-      url: "https://bhanupratap.dev",
+      name: "Karan Paliwal",
+      jobTitle: "AI Engineer",
+      description: profileDescription,
+      url: siteUrl,
       image:
         "https://media.licdn.com/dms/image/v2/D4E03AQFoa40cJ2WOMA/profile-displayphoto-scale_400_400/B4EZgKXbIXGoAo-/0/1752520570498?e=1759968000&v=beta&t=cckryikVjD2X7Nvhcmw5I8B1w6sQofIPdTWlpbmkDSU",
-      email: "bhanudahiya8@gmail.com",
+      email: "karanpaliwal.work@gmail.com",
       nationality: "Indian",
       birthDate: "2005",
       gender: "Male",
@@ -25,41 +29,53 @@ export default function StructuredData() {
         addressLocality: "New Delhi",
       },
       sameAs: [
-        "https://www.linkedin.com/in/bhanupratap1/",
-        "https://github.com/bhanudahiyaa",
-        "https://twitter.com/iBhanuDahiya",
+        "https://www.linkedin.com/in/karanpaliwalll/",
+        "https://github.com/karanpaliwallll",
+        "https://x.com/karanpaliwalll",
       ],
       knowsAbout: [
-        "Full Stack Development",
-        "React",
-        "Node.js",
-        "TypeScript",
-        "JavaScript",
-        "Python",
-        "Web Development",
-        "Software Engineering",
-        "Portfolio Development",
-        "Minimalist Design",
-        "Modern Web Design",
-        "Student Portfolio",
-        "Developer Portfolio",
-        "Tech Portfolio",
-        "Professional Portfolio",
+        "Claude Code",
+        "OpenAI Codex",
+        "AI Automation n8n",
+        "Context Engineering",
+        "Strategy Building",
+        "Operational Efficiency",
+        "Agentic Engineering",
+        "AI Agents",
+        "Wireframing",
       ],
       alumniOf: [
         {
           "@type": "EducationalOrganization",
-          name: "Maharaja Agrasen Institute of Technology",
-          alternateName: "MAIT",
-          description: "B.Tech in Computer Science",
-          url: "https://mait.ac.in",
+          name: "IILM University, Greater Noida",
+          description: "Bachelor of Technology - BTech, Computer Science",
+        },
+        {
+          "@type": "EducationalOrganization",
+          name: "Lal Bahadur Shastri Smarak Jaym Sr School",
+          description: "Senior Secondary Certificate, Computer Science",
         },
       ],
       worksFor: [
         {
           "@type": "Organization",
-          name: "Stealth Startup",
-          description: "Founding Engineer",
+          name: "Growleads",
+          description: "AI Engineering Intern",
+        },
+        {
+          "@type": "Organization",
+          name: "BrightCanvas",
+          description: "n8n Lead Generation Specialist Intern",
+        },
+        {
+          "@type": "Organization",
+          name: "Oqulix",
+          description: "AI Automation Engineer Intern",
+        },
+        {
+          "@type": "Organization",
+          name: "SGCA Technologies",
+          description: "UI/UX Designer Intern",
         },
       ],
       award: [
@@ -80,18 +96,19 @@ export default function StructuredData() {
       ],
       hasOccupation: {
         "@type": "Occupation",
-        name: "Full Stack Developer",
-        description: "Building efficient, scalable, and intuitive applications",
+        name: "AI Engineer",
+        description:
+          "Building AI agents, automation workflows, and systems for scaling operations",
         skills: [
-          "React",
-          "TypeScript",
-          "Node.js",
-          "JavaScript",
-          "Python",
-          "TailwindCSS",
-          "Supabase",
-          "Firebase",
-          "Streamlit",
+          "Claude Code",
+          "OpenAI Codex",
+          "AI Automation n8n",
+          "Context Engineering",
+          "Strategy Building",
+          "Operational Efficiency",
+          "Agentic Engineering",
+          "AI Agents",
+          "Wireframing",
         ],
       },
     };
