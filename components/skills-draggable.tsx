@@ -1,21 +1,25 @@
 "use client";
 
 import type React from "react";
-
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import {
   Bot,
   BrainCircuit,
-  ChartNoAxesCombined,
-  DraftingCompass,
+  Cpu,
   Network,
-  Route,
+  ShieldCheck,
+  Sparkles,
 } from "lucide-react";
 import {
-  SiClaude,
-  SiN8N,
-  SiOpenai,
+  SiFlask,
+  SiNextdotjs,
+  SiPostgresql,
+  SiPython,
+  SiPytorch,
+  SiScikitlearn,
+  SiSupabase,
+  SiTypescript,
 } from "react-icons/si";
 
 type Skill = {
@@ -49,18 +53,20 @@ function SkillPill({ label, icon }: Skill) {
 
 export function SkillsDraggable() {
   const skills: Skill[] = [
-    { label: "Claude Code", icon: <SiClaude className="h-3 w-3" /> },
-    { label: "OpenAI Codex", icon: <SiOpenai className="h-3 w-3" /> },
-    { label: "AI Automation n8n", icon: <SiN8N className="h-3 w-3" /> },
-    { label: "Context Engineering", icon: <BrainCircuit className="h-3 w-3" /> },
-    { label: "Strategy Building", icon: <Route className="h-3 w-3" /> },
-    {
-      label: "Operational Efficiency",
-      icon: <ChartNoAxesCombined className="h-3 w-3" />,
-    },
-    { label: "Agentic Engineering", icon: <Network className="h-3 w-3" /> },
+    { label: "Python", icon: <SiPython className="h-3 w-3" /> },
+    { label: "PyTorch", icon: <SiPytorch className="h-3 w-3" /> },
+    { label: "Next.js 15", icon: <SiNextdotjs className="h-3 w-3" /> },
+    { label: "TypeScript", icon: <SiTypescript className="h-3 w-3" /> },
+    { label: "Attention U-Net", icon: <Sparkles className="h-3 w-3" /> },
+    { label: "Supabase", icon: <SiSupabase className="h-3 w-3" /> },
+    { label: "PostgreSQL", icon: <SiPostgresql className="h-3 w-3" /> },
+    { label: "Flask", icon: <SiFlask className="h-3 w-3" /> },
+    { label: "Scikit-learn", icon: <SiScikitlearn className="h-3 w-3" /> },
+    { label: "XGBoost", icon: <Cpu className="h-3 w-3" /> },
+    { label: "System Design", icon: <Network className="h-3 w-3" /> },
+    { label: "Row-Level Security", icon: <ShieldCheck className="h-3 w-3" /> },
     { label: "AI Agents", icon: <Bot className="h-3 w-3" /> },
-    { label: "Wireframing", icon: <DraftingCompass className="h-3 w-3" /> },
+    { label: "Context Engineering", icon: <BrainCircuit className="h-3 w-3" /> },
   ];
 
   return (

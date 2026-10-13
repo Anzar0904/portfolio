@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { TextShimmer } from "@/components/ui/text-shimmer";
@@ -14,7 +13,6 @@ import { Dock } from "@/components/dock";
 import { SkillsDraggable } from "@/components/skills-draggable";
 import { ThemeToggle } from "@/components/theme-toggle";
 import {
-  ScrollAnimation,
   FadeInText,
   SlideUp,
   SlideInLeft,
@@ -30,7 +28,7 @@ export default function Page() {
             href="#"
             className="font-semibold text-neutral-900 dark:text-neutral-50"
           >
-            karan.
+            anzar.
           </Link>
           <div className="flex items-center gap-2 sm:gap-4">
             <a
@@ -57,7 +55,6 @@ export default function Page() {
         >
           <div className="p-4 md:p-6 lg:p-6">
             {/* Header */}
-
             <SlideUp>
               <header id="about" className="space-y-2 section-lines p-4">
                 <FadeInText delay={0.1}>
@@ -76,28 +73,31 @@ export default function Page() {
                 <SlideInLeft delay={0.2}>
                   <div className="flex items-center gap-3">
                     <div className="h-16 w-16 ring-2 ring-neutral-200 dark:ring-neutral-900 rounded-full overflow-hidden">
-                      <img
+                      <Image
                         src="/facedemo.jpeg"
-                        alt="Karan Paliwal"
-                        className="h-full w-full object-cover scale-115 -translate-x-0.5"
+                        alt="Mohammad Anzar Akhtar"
+                        width={64}
+                        height={64}
+                        className="h-full w-full object-cover scale-110"
+                        priority
                       />
                     </div>
                     <h1 className="text-2xl md:text-3xl font-medium tracking-tight text-neutral-900 dark:text-neutral-50">
-                      Karan Paliwal
+                      Mohammad Anzar Akhtar
                     </h1>
                   </div>
                 </SlideInLeft>
                 <FadeInText delay={0.3}>
                   <div className="flex flex-wrap items-center mt-3 gap-2 sm:gap-4 text-xs text-neutral-600 dark:text-neutral-300">
-                    <span>20, he/him</span>
+                    <span>he/him</span>
                     <span className="hidden sm:inline">{"||"}</span>
                     <span className="max-w-[38ch]">
                       <Typewriter
                         text={[
-                          "AI Engineer",
-                          "Shitposter",
-                          "Explorer",
-                          "Freelancer",
+                          "AI/ML Engineer",
+                          "Full-Stack Developer",
+                          "Deep Learning Researcher",
+                          "Problem Solver",
                         ]}
                         speed={90}
                         waitTime={2000}
@@ -106,7 +106,7 @@ export default function Page() {
                         cursorChar="|"
                         showCursor={true}
                       />
-                      {" from India."}
+                      {" from Lucknow, India."}
                     </span>
                   </div>
                 </FadeInText>
@@ -118,10 +118,8 @@ export default function Page() {
                       className="h-6 w-20 rounded-sm bg-neutral-900 px-4 text-white shadow-sm hover:bg-neutral-900/90 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200"
                     >
                       <a
-                        href="/resume/karan-paliwal-resume.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="View Resume"
+                        href="mailto:anzar0904@gmail.com"
+                        aria-label="View Resume / Contact"
                       >
                         Resume
                       </a>
@@ -133,9 +131,7 @@ export default function Page() {
                       className="h-6 w-6 rounded-sm border border-neutral-200 p-0 text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900"
                     >
                       <a
-                        href="https://mail.google.com/mail/?view=cm&fs=1&to=karanpaliwal.work@gmail.com"
-                        target="_blank"
-                        rel="noreferrer"
+                        href="mailto:anzar0904@gmail.com"
                         aria-label="Send email"
                       >
                         <Mail className="h-4 w-4" />
@@ -148,22 +144,7 @@ export default function Page() {
                       className="h-6 w-6 rounded-sm border border-neutral-200 p-0 text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900"
                     >
                       <a
-                        href="https://x.com/karanpaliwalll"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Open Twitter"
-                      >
-                        <Twitter className="h-4 w-4" />
-                      </a>
-                    </Button>
-                    <Button
-                      size="sm"
-                      variant="ghost"
-                      asChild
-                      className="h-6 w-6 rounded-sm border border-neutral-200 p-0 text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900"
-                    >
-                      <a
-                        href="https://github.com/karanpaliwallll"
+                        href="https://github.com/Anzar0904"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="Open GitHub"
@@ -178,7 +159,7 @@ export default function Page() {
                       className="h-6 w-6 rounded-sm border border-neutral-200 p-0 text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900"
                     >
                       <a
-                        href="https://www.linkedin.com/in/karanpaliwalll/"
+                        href="https://linkedin.com/in/anzar-akhtar-b25397343"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="Open LinkedIn"
@@ -195,13 +176,13 @@ export default function Page() {
             <FadeInText delay={0.5}>
               <section className="mt-4 m-2 justify-center items-center text-[13px] leading-6 text-neutral-600 dark:text-neutral-300">
                 <p>
-                  Most teams are not short on tools. They are short on systems
-                  that actually work together.{" "}
-                  <span className="rounded bg-yellow-200 px-1.5 py-0.5 text-[12px] font-medium text-neutral-900">
-                    I build systems that scale ops,
+                  Most teams are not short on ideas. They are short on engineers
+                  who bridge research and production.{" "}
+                  <span className="rounded bg-yellow-200 px-1.5 py-0.5 text-[12px] font-medium text-neutral-900 dark:bg-yellow-300">
+                    I ship projects end-to-end,
                   </span>{" "}
-                  connect scattered workflows, reduce manual effort, and help
-                  teams move faster without adding more chaos.
+                  from PyTorch deep learning pipelines to security-hardened,
+                  responsive Next.js web applications.
                 </p>
               </section>
             </FadeInText>
@@ -217,80 +198,16 @@ export default function Page() {
                 <div className="mt-3 space-y-3">
                   <SlideInLeft delay={0.1}>
                     <WorkItem
-                      icon="shield"
-                      company="Growleads"
-                      role="AI Engineering Intern"
-                      period="Feb 2026 - May 2026"
-                      summary="Built and optimized outbound automation systems, researched emerging AI tools, supported internal product development, and developed AI agents to improve operational efficiency for a B2B demand intelligence team."
-                      logoUrl="/growleads-logo.png"
-                      links={[
-                        {
-                          label: "Offer Letter ↗",
-                          href: "https://drive.google.com/file/d/1mt0sitpidx792teX9CWrldxYe_huaTO0/view",
-                        },
-                        {
-                          label: "Certificate ↗",
-                          href: "https://drive.google.com/file/d/1L0ssaThvUJQmz-9lf6dLICKBLHNwJHsO/view",
-                        },
-                      ]}
-                    />
-                  </SlideInLeft>
-                  <SlideInLeft delay={0.1}>
-                    <WorkItem
                       icon="building"
-                      company="BrightCanvas"
-                      role="n8n Lead Generation Specialist Intern"
-                      period="Sep 2025 - Mar 2026"
-                      summary="Designed n8n lead generation workflows, automated data collection, enrichment, and outreach processes, researched qualified prospects, and prepared performance reports to improve automation workflows."
-                      logoUrl="/brightcanvas-logo.webp"
+                      company="Infosys"
+                      role="Full Stack Development Intern (Virtual)"
+                      period="Nov 2025 - Mar 2026"
+                      summary="Shipped EcoPackAI, an AI packaging recommendation engine scoring materials on cost, carbon emissions, strength, and recyclability. Trained Random Forest and XGBoost predictive models on engineered data, and built Flask REST APIs backed by MySQL and a responsive interface."
+                      logoUrl="/infosys-logo.svg"
                       links={[
                         {
-                          label: "Offer Letter ↗",
-                          href: "https://drive.google.com/file/d/10J9hSKiC2G34cKN-JGTHVnycLfsyObKR/view",
-                        },
-                        {
-                          label: "Certificate ↗",
-                          href: "https://drive.google.com/file/d/1rzWC3nEKUwDzoL1Tbe-X60QDlt6yA3hM/view",
-                        },
-                      ]}
-                    />
-                  </SlideInLeft>
-                  <SlideInLeft delay={0.1}>
-                    <WorkItem
-                      icon="building"
-                      company="Oqulix"
-                      role="AI Automation Engineer Intern"
-                      period="Dec 2025 - Feb 2026"
-                      summary="Developed an AI-powered automated content generator and implemented AI-driven workflow improvements for a VR product team focused on healthcare, education, and immersive experiences."
-                      logoUrl="/oqulix-logo-card.png"
-                      links={[
-                        {
-                          label: "Offer Letter ↗",
-                          href: "https://drive.google.com/file/d/1daIueW0j2Af9lKTxHZxfyv1KoPkPjot5/view",
-                        },
-                        {
-                          label: "Certificate ↗",
-                          href: "https://drive.google.com/file/d/18ONHZuMCAXlCDxuvDjrdbQ4SLsKIcCqf/view",
-                        },
-                      ]}
-                    />
-                  </SlideInLeft>
-                  <SlideInLeft delay={0.1}>
-                    <WorkItem
-                      icon="building"
-                      company="SGCA Technologies"
-                      role="UI/UX Designer Intern"
-                      period="Jun 2025 - Aug 2025"
-                      summary="Contributed to the design department through UI/UX design work, interface planning, and visual design support during a remote internship with SGCA Technologies."
-                      logoUrl="/sgca-logo.png"
-                      links={[
-                        {
-                          label: "Offer Letter ↗",
-                          href: "https://drive.google.com/file/d/1KfbghjPATGqnrVgP5NU42dbB0jJQTpYc/view",
-                        },
-                        {
-                          label: "Certificate ↗",
-                          href: "https://drive.google.com/file/d/13omMXeX4gYeob43MLR67OPE5lAVvehKv/view",
+                          label: "Completed ↗",
+                          href: "https://linkedin.com/in/anzar-akhtar-b25397343",
                         },
                       ]}
                     />
@@ -310,78 +227,63 @@ export default function Page() {
                 <div className="space-y-2">
                   <SlideInLeft delay={0.1}>
                     <ProjectListItem
-                      title="The Art Of Building Skills"
+                      title="CampusConnect — Full-Stack Platform"
                       links={[
                         {
-                          label: "Case Study ↗",
-                          href: "/project-pdfs/the-art-of-building-skills.pdf",
+                          label: "Repository ↗",
+                          href: "https://github.com/Anzar0904",
                         },
                       ]}
                       bullets={[
-                        "Designed a model-agnostic framework for turning repeated AI workflows into reusable agent skills instead of disposable prompts.",
-                        "Defined the skill package structure around SKILL.md, scripts, references, and assets so agents load only the context they need.",
-                        "Documented a build process for capturing repeatable workflows, adding constraints and examples, then testing them on real tasks.",
+                        "Architected and shipped a 29-route collaboration platform for college students with real-time feeds, DMs, marketplace, AI assistant, and coding arena on Next.js 15 & Supabase.",
+                        "Led security-hardening pass: college-scoped Row-Level Security policies, server-side OTP/email validation via Edge Functions, and signed URLs for private storage.",
+                        "Eliminated duplicate-vote race conditions via atomic RPCs and built motion-driven UI interactions using React Three Fiber and GSAP.",
                       ]}
-                      tags={["Agent Workflows", "Skills", "Plugins", "Automation"]}
+                      tags={["Next.js 15", "TypeScript", "Supabase", "PostgreSQL", "GSAP / R3F"]}
                     />
                   </SlideInLeft>
                   <SlideInRight delay={0.1}>
                     <ProjectListItem
-                      title="Model Agnostic AI-OS v1"
+                      title="CI-MRGS: Multi-Region Glioma Segmentation"
                       links={[
                         {
-                          label: "Case Study ↗",
-                          href: "/project-pdfs/model-agnostic-ai-os-v1.pdf",
+                          label: "Research ↗",
+                          href: "https://github.com/Anzar0904",
                         },
                       ]}
                       bullets={[
-                        "Architected an Obsidian-based operating system that gives AI agents project truth, session history, corrections, and durable memory.",
-                        "Separated current status, reusable memory, corrections, and session archive so future agents know what to trust.",
-                        "Shipped a local-first v1 with vault structure, retrieval map, active handoff, closeout flow, backups, and setup scripts.",
+                        "Built a deep learning framework for multi-class brain tumor segmentation on BraTS 2024 using multi-modal MRI input (T1, T1c, T2, FLAIR) with Attention U-Net.",
+                        "Engineered a production-style PyTorch training pipeline with automatic checkpointing, mixed-precision (AMP), EMA, TensorBoard logging, and Kaggle GPU resumption.",
+                        "Designed a hybrid Focal Tversky + Boundary Loss and augmentation strategy to counter severe tumor sub-region class imbalance; prepared manuscript in IEEE format.",
                       ]}
-                      tags={["Obsidian", "Agent Memory", "Markdown", "Automation"]}
+                      tags={["PyTorch", "Attention U-Net", "BraTS 2024", "AMP", "Deep Learning"]}
                     />
                   </SlideInRight>
                   <SlideInLeft delay={0.2}>
                     <ProjectListItem
-                      title="Lead Generation In A Box"
+                      title="AIOS — Personal AI Operating System"
                       links={[
                         {
-                          label: "Case Study ↗",
-                          href: "/project-pdfs/lead-generation-in-a-box.pdf",
+                          label: "Architecture ↗",
+                          href: "https://github.com/Anzar0904",
                         },
                       ]}
                       bullets={[
-                        "Built an autonomous lead pipeline that turns a keyword into researched, enriched, and outreach-ready prospects.",
-                        "Scrapes relevant LinkedIn posts, profiles, and company context before drafting personalized outreach.",
-                        "Stores prospect history, pain points, enrichment data, and LinkedIn or WhatsApp drafts to avoid duplicated manual work.",
+                        "Architected a four-layer unidirectional-dependency architecture (Core → Integration → Skill → Interface) powered by a kernel state machine and strongly-typed local event bus.",
+                        "Implemented git-aware context services with graceful fallbacks and enforced a strict 'no tests, no merge' standard with pytest and Ruff.",
+                        "Designed local-first durable memory and task reconciliation for autonomous agent workflows.",
                       ]}
-                      tags={["LinkedIn Scraping", "AI Agents", "Enrichment", "Outreach"]}
+                      tags={["Python", "AI OS Architecture", "Event Bus", "Agent Memory", "pytest"]}
                     />
                   </SlideInLeft>
-                  <SlideInRight delay={0.2}>
-                    <ProjectListItem
-                      title="Content Engine v1"
-                      links={[
-                        {
-                          label: "Case Study ↗",
-                          href: "/project-pdfs/content-engine-v1.pdf",
-                        },
-                      ]}
-                      bullets={[
-                        "Designed an autonomous content pipeline that converts raw context into strategy, platform-specific copy, and visual assets.",
-                        "Built the workflow around strategy-first generation so the engine plans message angle, audience, and platform tone before writing.",
-                        "Maintains persistent context, generated strategy, platform selection, and final outputs for consistent multi-platform content.",
-                      ]}
-                      tags={["LLM Orchestration", "Content Strategy", "AI Assets", "Automation"]}
-                    />
-                  </SlideInRight>
                 </div>
                 <FadeInText delay={0.2}>
                   <div className="mt-3 flex justify-center">
                     <a
-                      href="https://github.com/karanpaliwallll"
-                      className="inline-flex items-center gap-1 rounded-sm border border-neutral-200 px-3 py-1.5 text-sm text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900"
+                      href="https://github.com/Anzar0904"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1 rounded-sm border border-neutral-200 px-3 py-1.5 text-sm text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900 transition-colors"
                     >
                       View all projects →
                     </a>
@@ -411,7 +313,7 @@ export default function Page() {
                       <AchievementItem
                         title="IILM University, Greater Noida"
                         date="2024 - 2028"
-                        description="Bachelor of Technology - BTech, Computer Science"
+                        description="Bachelor of Technology - B.Tech, Computer Science & Engineering"
                         logoUrl="/iilm-logo-card.png"
                       />
                     </li>
@@ -419,10 +321,10 @@ export default function Page() {
                   <SlideInRight delay={0.1}>
                     <li>
                       <AchievementItem
-                        title="Lal Bahadur Shastri Smarak Jaym Sr School"
-                        date="2011 - 2023"
-                        description="Senior Secondary Certificate, Computer Science"
-                        logoUrl="/lbs-school-logo.png"
+                        title="Certifications & Specializations"
+                        date="2025"
+                        description="Oracle DBMS Certified (SQL & PL/SQL) · Infosys Springboard Data Science"
+                        logoUrl="/infosys-logo.svg"
                       />
                     </li>
                   </SlideInRight>
@@ -441,7 +343,7 @@ export default function Page() {
                 <FadeInText delay={0.1}>
                   <p className="mx-auto mt-2 max-w-xl text-xs text-neutral-500 dark:text-neutral-400">
                     {
-                      "I'm always interested in new opportunities and exciting projects. Whether you have a project in mind or just want to chat about tech, I'd love to hear from you."
+                      "I'm always interested in new opportunities and exciting engineering challenges. Whether you have a project in mind or want to discuss AI systems, I'd love to connect."
                     }
                   </p>
                 </FadeInText>
@@ -455,9 +357,7 @@ export default function Page() {
                       className="h-9 rounded-md bg-neutral-900 px-4 text-white shadow-sm hover:bg-neutral-900/90 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200"
                     >
                       <a
-                        href="https://mail.google.com/mail/?view=cm&fs=1&to=karanpaliwal.work@gmail.com"
-                        target="_blank"
-                        rel="noreferrer"
+                        href="mailto:anzar0904@gmail.com"
                         aria-label="Get in touch via email"
                       >
                         <span className="inline-flex items-center gap-2">
@@ -473,29 +373,29 @@ export default function Page() {
                 <SlideInRight delay={0.1}>
                   <div className="mt-4 flex items-center justify-center gap-2 sm:gap-4 text-neutral-600 dark:text-neutral-300">
                     <a
-                      href="https://x.com/karanpaliwalll"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="Twitter"
-                      className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-200 hover:bg-neutral-50 dark:border-neutral-800 dark:hover:bg-neutral-900"
-                    >
-                      <Twitter className="h-4 w-4" />
-                    </a>
-                    <a
-                      href="https://github.com/karanpaliwallll"
+                      href="https://github.com/Anzar0904"
                       target="_blank"
                       rel="noreferrer"
                       aria-label="GitHub"
-                      className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-200 hover:bg-neutral-50 dark:border-neutral-800 dark:hover:bg-neutral-900"
+                      className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-200 hover:bg-neutral-50 dark:border-neutral-800 dark:hover:bg-neutral-900 transition-colors"
                     >
                       <Github className="h-4 w-4" />
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/karanpaliwalll/"
+                      href="https://linkedin.com/in/anzar-akhtar-b25397343"
+                      target="_blank"
+                      rel="noreferrer"
                       aria-label="Open LinkedIn"
-                      className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-200 hover:bg-neutral-50 dark:border-neutral-800 dark:hover:bg-neutral-900"
+                      className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-200 hover:bg-neutral-50 dark:border-neutral-800 dark:hover:bg-neutral-900 transition-colors"
                     >
                       <Linkedin className="h-4 w-4" />
+                    </a>
+                    <a
+                      href="mailto:anzar0904@gmail.com"
+                      aria-label="Email"
+                      className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-neutral-200 hover:bg-neutral-50 dark:border-neutral-800 dark:hover:bg-neutral-900 transition-colors"
+                    >
+                      <Mail className="h-4 w-4" />
                     </a>
                   </div>
                 </SlideInRight>
@@ -503,28 +403,25 @@ export default function Page() {
                 {/* Availability + response time */}
                 <FadeInText delay={0.1}>
                   <p className="mt-4 text-xs text-neutral-500 dark:text-neutral-400">
-                    Currently available for freelance work and full‑time
-                    opportunities
+                    Currently available for AI/ML engineering, full-stack internships, and new-grad roles
                   </p>
                   <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
                     Response time: Usually within 24 hours
                   </p>
                 </FadeInText>
-
-                {/* Divider before footer */}
               </section>
             </SlideUp>
           </div>
         </article>
-        <div className="mt-8 flex justify-center rounded-xl py-2  border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-950 ">
+        <div className="mt-8 flex justify-center rounded-xl py-2 border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-950">
           <p className="text-xs text-neutral-500 dark:text-neutral-400 section-lines p-2">
-            <span className="italic">Going with the flow</span> <span aria-hidden>🍀</span>
+            <span className="italic">Going with the flow</span>{" "}
+            <span aria-hidden="true">🍀</span>
           </p>
-        </div>{" "}
+        </div>
       </div>
 
       {/* Floating Dock */}
-
       <Dock />
     </main>
   );

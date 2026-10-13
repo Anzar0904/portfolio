@@ -2,9 +2,6 @@ import {
   Github,
   Home,
   Mail,
-  Globe2,
-  User,
-  Twitter,
   Linkedin,
 } from "lucide-react";
 
@@ -12,24 +9,19 @@ export function Dock() {
   const items = [
     { icon: Home, label: "Home", href: "#" },
     {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://x.com/karanpaliwalll",
-    },
-    {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/karanpaliwallll",
+      href: "https://github.com/Anzar0904",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/karanpaliwalll/",
+      href: "https://linkedin.com/in/anzar-akhtar-b25397343",
     },
     {
       icon: Mail,
       label: "Email",
-      href: "https://mail.google.com/mail/?view=cm&fs=1&to=karanpaliwal.work@gmail.com",
+      href: "mailto:anzar0904@gmail.com",
     },
   ];
   return (
@@ -44,7 +36,7 @@ export function Dock() {
             href={it.href}
             target={it.href.startsWith("http") ? "_blank" : undefined}
             rel={it.href.startsWith("http") ? "noreferrer" : undefined}
-            className="group inline-flex items-center gap-1 rounded-xl px-3 py-1.5 text-sm text-neutral-700 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-900"
+            className="group inline-flex items-center gap-1 rounded-xl px-3 py-1.5 text-sm text-neutral-700 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-900 transition-colors"
           >
             <it.icon className="h-4 w-4 opacity-90" aria-hidden="true" />
             <span className="sr-only">{it.label}</span>
