@@ -261,19 +261,20 @@ export default function Page() {
                   </SlideInRight>
                   <SlideInLeft delay={0.2}>
                     <ProjectListItem
-                      title="AIOS — Personal AI Operating System"
+                      title="AIOS — Personal AI Operating System & Agent Runtime"
                       links={[
                         {
-                          label: "Architecture ↗",
-                          href: "https://github.com/Anzar0904",
+                          label: "Repository ↗",
+                          href: "https://github.com/Anzar0904/Aios",
                         },
                       ]}
                       bullets={[
-                        "Architected a four-layer unidirectional-dependency architecture (Core → Integration → Skill → Interface) powered by a kernel state machine and strongly-typed local event bus.",
-                        "Implemented git-aware context services with graceful fallbacks and enforced a strict 'no tests, no merge' standard with pytest and Ruff.",
-                        "Designed local-first durable memory and task reconciliation for autonomous agent workflows.",
+                        "Architected a 4-layer unidirectional OS (Core → Integration → Skill → Interface) with a kernel state machine and heuristic intent router executing system queries with 0 LLM hops (7.4 µs dispatch latency).",
+                        "Engineered an episodic agent memory system pairing Qdrant vector search with automatic SQLite cosine-similarity fallback during network partitions and MinIO (S3) for durable checkpoint recovery.",
+                        "Implemented a two-phase action approval protocol (/v1/actions/propose → confirm) with local Ollama inference budgeting (Qwen 9B, DeepSeek R1) and SSE real-time telemetry (/v1/events).",
+                        "Maintained 100% test pass rate across 1,200 unit and integration tests (pytest in 3.02s) with automated Bandit security verification.",
                       ]}
-                      tags={["Python", "AI OS Architecture", "Event Bus", "Agent Memory", "pytest"]}
+                      tags={["Python", "Qdrant", "Redis", "MinIO", "Next.js", "Ollama"]}
                     />
                   </SlideInLeft>
                 </div>
