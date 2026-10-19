@@ -118,8 +118,10 @@ export default function Page() {
                       className="h-6 w-20 rounded-sm bg-neutral-900 px-4 text-white shadow-sm hover:bg-neutral-900/90 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200"
                     >
                       <a
-                        href="mailto:anzar0904@gmail.com"
-                        aria-label="View Resume / Contact"
+                        href="/resume/anzar-akhtar-resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Resume"
                       >
                         Resume
                       </a>
