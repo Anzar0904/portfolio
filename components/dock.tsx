@@ -16,7 +16,7 @@ export function Dock() {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/anzar-akhtar-b25397343",
+      href: "https://www.linkedin.com/in/mohammad-anzar-akhtar-b25397343",
     },
     {
       icon: Mail,

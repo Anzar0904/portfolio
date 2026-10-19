@@ -12,26 +12,21 @@ export default function StructuredData() {
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "Person",
-      name: "Karan Paliwal",
-      jobTitle: "AI Engineer",
+      name: "Mohammad Anzar Akhtar",
+      jobTitle: "AI/ML Engineer & Full-Stack Developer",
       description: profileDescription,
       url: siteUrl,
-      image:
-        "https://media.licdn.com/dms/image/v2/D4E03AQFoa40cJ2WOMA/profile-displayphoto-scale_400_400/B4EZgKXbIXGoAo-/0/1752520570498?e=1759968000&v=beta&t=cckryikVjD2X7Nvhcmw5I8B1w6sQofIPdTWlpbmkDSU",
-      email: "karanpaliwal.work@gmail.com",
+      email: "anzar0904@gmail.com",
       nationality: "Indian",
-      birthDate: "2005",
       gender: "Male",
       address: {
         "@type": "PostalAddress",
         addressCountry: "India",
-        addressRegion: "Delhi",
-        addressLocality: "New Delhi",
+        addressLocality: "Lucknow",
       },
       sameAs: [
-        "https://www.linkedin.com/in/karanpaliwalll/",
-        "https://github.com/karanpaliwallll",
-        "https://x.com/karanpaliwalll",
+        "https://www.linkedin.com/in/mohammad-anzar-akhtar-b25397343",
+        "https://github.com/Anzar0904",
       ],
       knowsAbout: [
         "Claude Code",

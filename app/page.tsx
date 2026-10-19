@@ -161,7 +161,7 @@ export default function Page() {
                       className="h-6 w-6 rounded-sm border border-neutral-200 p-0 text-neutral-700 hover:bg-neutral-50 dark:border-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-900"
                     >
                       <a
-                        href="https://linkedin.com/in/anzar-akhtar-b25397343"
+                        href="https://www.linkedin.com/in/mohammad-anzar-akhtar-b25397343"
                         target="_blank"
                         rel="noreferrer"
                         aria-label="Open LinkedIn"
@@ -209,7 +209,7 @@ export default function Page() {
                       links={[
                         {
                           label: "Completed ↗",
-                          href: "https://linkedin.com/in/anzar-akhtar-b25397343",
+                          href: "https://www.linkedin.com/in/mohammad-anzar-akhtar-b25397343",
                         },
                       ]}
                     />
@@ -385,7 +385,7 @@ export default function Page() {
                       <Github className="h-4 w-4" />
                     </a>
                     <a
-                      href="https://linkedin.com/in/anzar-akhtar-b25397343"
+                      href="https://www.linkedin.com/in/mohammad-anzar-akhtar-b25397343"
                       target="_blank"
                       rel="noreferrer"
                       aria-label="Open LinkedIn"

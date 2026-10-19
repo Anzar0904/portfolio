@@ -35,5 +35,5 @@ npm run build
 ## Connect
 
 - **GitHub:** [github.com/Anzar0904](https://github.com/Anzar0904)
-- **LinkedIn:** [linkedin.com/in/anzar-akhtar-b25397343](https://linkedin.com/in/anzar-akhtar-b25397343)
+- **LinkedIn:** [linkedin.com/in/mohammad-anzar-akhtar-b25397343](https://www.linkedin.com/in/mohammad-anzar-akhtar-b25397343)
 - **Email:** [anzar0904@gmail.com](mailto:anzar0904@gmail.com)
